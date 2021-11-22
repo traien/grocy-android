@@ -23,18 +23,39 @@
   <!-- SNACKBAR -->
   <!-- TODO: try to set button text color in style instead of programmatically -->
 
+  <style name="Widget.Grocy.Snackbar.TextView" parent="Widget.Material3.Snackbar.TextView">
+    <item name="android:textColor">?attr/colorSurfaceVariant</item>
+  </style>
+
   <style
     name="Widget.Grocy.Button.TextButton.Snackbar"
-    parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
-    <item name="android:fontFamily">@font/jost_bold</item>
+    parent="Widget.Material3.Button.TextButton.Snackbar">
+    <item name="android:fontFamily">@font/jost_medium</item>
     <item name="android:textSize">14.5sp</item>
     <item name="cornerRadius">8dp</item>
   </style>
 
+  <!-- FAB -->
+
+  <style
+    name="Widget.Grocy.FloatingActionButton"
+    parent="Widget.Material3.FloatingActionButton.Large.Tertiary">
+    <item name="cornerSize">@dimen/m3_fab_corner_size</item>
+    <item name="shapeAppearanceOverlay">
+      @style/ShapeAppearanceOverlay.Grocy.FloatingActionButton
+    </item>
+  </style>
+
+  <style
+    name="ShapeAppearanceOverlay.Grocy.FloatingActionButton"
+    parent="ShapeAppearanceOverlay.Material3.FloatingActionButton">
+    <item name="cornerSize">50%</item>
+  </style>
+
   <!-- TOOLBAR MENU BUTTON -->
 
-  <style name="Widget.Grocy.ActionButton.OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
-    <item name="android:tint">@color/icon</item>
+  <style name="ThemeOverlay.Grocy.OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+    <item name="android:tint">?attr/colorOnSurfaceVariant</item>
   </style>
 
   <!-- DRAWER -->
@@ -58,7 +79,7 @@
 
   <!-- CARD -->
 
-  <style name="Widget.Grocy.Card" parent="Widget.MaterialComponents.CardView">
+  <style name="Widget.Grocy.Card" parent="Widget.Material3.CardView.Filled">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:stateListAnimator">@animator/card_elevation</item>
@@ -78,7 +99,7 @@
 
   <!-- CHIP -->
 
-  <style name="Widget.Grocy.Chip" parent="Widget.MaterialComponents.Chip.Action">
+  <style name="Widget.Grocy.Chip" parent="Widget.Material3.Chip.Assist">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="chipStartPadding">7dp</item>
@@ -96,7 +117,7 @@
 
   <style
     name="Widget.Grocy.TextInputLayout.FilledBox"
-    parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+    parent="Widget.Material3.TextInputLayout.FilledBox.Dense">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="boxCornerRadiusTopStart">12dp</item>
@@ -114,7 +135,7 @@
 
   <style
     name="Widget.Grocy.TextInputLayout.FilledBox.DropDown"
-    parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+    parent="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="boxCornerRadiusTopStart">12dp</item>
@@ -132,7 +153,7 @@
 
   <style
     name="Widget.Grocy.TextInputLayout.FilledBox.Dense"
-    parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+    parent="Widget.Material3.TextInputLayout.FilledBox.Dense">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="boxBackgroundColor">@color/on_background_tertiary</item>
@@ -150,7 +171,7 @@
 
   <style
     name="Widget.Grocy.TextInputEditText.FilledBox.Dense"
-    parent="ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox">
+    parent="ThemeOverlay.Material3.TextInputEditText.FilledBox">
     <item name="android:padding">8dp</item>
   </style>
 
@@ -166,19 +187,21 @@
 
   <!-- SWITCH -->
 
-  <style name="Widget.Grocy.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+  <style name="Widget.Grocy.Switch" parent="Widget.Material3.CompoundButton.Switch">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginStart">16dp</item>
-    <item name="android:minWidth">0dp</item>
-    <item name="android:minHeight">0dp</item>
+    <item name="thumbTint">@color/selector_switch_thumb_tint</item>
+    <item name="trackTint">@color/selector_switch_track_tint</item>
+    <item name="track">@drawable/shape_switch_track</item>
+    <item name="android:thumb">@drawable/shape_switch_thumb</item>
   </style>
 
   <!-- TAB LAYOUT -->
 
   <style
     name="Widget.Grocy.TabLayout.PageIndicator"
-    parent="@style/Widget.MaterialComponents.TabLayout">
+    parent="@style/Widget.Material3.TabLayout">
     <item name="android:background">@color/primary</item>
     <item name="tabIndicatorColor">@color/secondary</item>
     <item name="tabIndicatorFullWidth">false</item>
@@ -189,34 +212,28 @@
 
   <style
     name="Widget.Grocy.Button.OutlinedButton"
-    parent="Widget.MaterialComponents.Button.OutlinedButton">
+    parent="Widget.Material3.Button.OutlinedButton">
     <item name="rippleColor">@color/secondary_translucent</item>
     <item name="iconTint">@color/icon</item>
     <item name="android:textColor">@color/secondary</item>
-    <item name="android:textStyle">bold</item>
-    <item name="android:fontFamily">@font/jost_bold</item>
+    <item name="android:fontFamily">@font/jost_medium</item>
     <item name="strokeColor">@color/stroke_secondary</item>
     <item name="strokeWidth">1dp</item>
-    <item name="cornerRadius">10dp</item>
   </style>
 
   <style
     name="Widget.Grocy.Button.UnelevatedButton"
-    parent="Widget.MaterialComponents.Button.UnelevatedButton">
+    parent="Widget.Material3.Button.UnelevatedButton">
     <item name="rippleColor">@color/highlight_on_secondary</item>
     <item name="android:textColor">@color/button_text_color_selector</item>
-    <item name="android:textStyle">bold</item>
-    <item name="android:fontFamily">@font/jost_bold</item>
+    <item name="android:fontFamily">@font/jost_medium</item>
     <item name="backgroundTint">@color/button_bg_color_selector</item>
-    <item name="cornerRadius">10dp</item>
   </style>
 
-  <style name="Widget.Grocy.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+  <style name="Widget.Grocy.Button.TextButton" parent="Widget.Material3.Button.TextButton">
     <item name="rippleColor">@color/secondary_translucent</item>
     <item name="android:textColor">@color/button_text_color_secondary_selector</item>
-    <item name="android:textStyle">bold</item>
-    <item name="android:fontFamily">@font/jost_bold</item>
-    <item name="cornerRadius">10dp</item>
+    <item name="android:fontFamily">@font/jost_medium</item>
   </style>
 
   <!-- PROGRESS BAR -->
@@ -350,7 +367,7 @@
 
   <style
     name="Widget.Grocy.RadioButton"
-    parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+    parent="Widget.Material3.CompoundButton.RadioButton">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textSize">16.5sp</item>
@@ -370,7 +387,7 @@
 
   <!-- CHECK BOX -->
 
-  <style name="Widget.Grocy.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+  <style name="Widget.Grocy.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textSize">15sp</item>
@@ -385,7 +402,7 @@
 
   <!-- TOOLTIP -->
 
-  <style name="Widget.Grocy.Tooltip" parent="Widget.MaterialComponents.Tooltip">
+  <style name="Widget.Grocy.Tooltip" parent="Widget.Material3.Tooltip">
     <item name="backgroundTint">@color/tooltip_background</item>
     <item name="android:textAppearance">@style/TextAppearance.Grocy.Tooltip</item>
   </style>
@@ -427,7 +444,7 @@
   <style name="Widget.Grocy.TextView.Toolbar" parent="Widget.Grocy.TextView">
     <item name="android:textColor">@color/on_primary</item>
     <item name="android:textSize" tools:ignore="SpUsage">21.5dp</item>
-    <item name="android:fontFamily">@font/jost_bold</item>
+    <item name="android:fontFamily">@font/jost_medium</item>
     <item name="android:singleLine">true</item>
   </style>
 
@@ -455,7 +472,7 @@
 
   <style name="Widget.Grocy.TextView.ShoppingModeGroup" parent="Widget.Grocy.TextView">
     <item name="android:textSize">18sp</item>
-    <item name="android:fontFamily">@font/jost_bold</item>
+    <item name="android:fontFamily">@font/jost_medium</item>
     <item name="android:textColor">@color/retro_green_fg</item>
     <item name="android:letterSpacing">0.06</item>
     <item name="android:textAllCaps">true</item>
@@ -469,7 +486,7 @@
 
   <style name="Widget.Grocy.TextView.Title.BottomSheet" parent="Widget.Grocy.TextView">
     <item name="android:textSize" tools:ignore="SpUsage">21.5dp</item>
-    <item name="android:fontFamily">@font/jost_bold</item>
+    <item name="android:fontFamily">@font/jost_medium</item>
   </style>
 
   <style name="Widget.Grocy.TextView.Category" parent="Widget.Grocy.TextView">
@@ -479,7 +496,7 @@
     <item name="android:paddingTop">10dp</item>
     <item name="android:paddingBottom">3dp</item>
     <item name="android:textSize">14.5sp</item>
-    <item name="android:fontFamily">@font/jost_bold</item>
+    <item name="android:fontFamily">@font/jost_medium</item>
     <item name="android:textColor">@color/secondary</item>
   </style>
 

@@ -63,6 +63,7 @@ import androidx.navigation.NavInflater;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.preference.PreferenceManager;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.google.android.material.color.DynamicColors;
 import com.google.android.material.snackbar.Snackbar;
 import info.guardianproject.netcipher.proxy.OrbotHelper;
 import java.security.NoSuchAlgorithmException;
@@ -91,6 +92,7 @@ import xyz.zedler.patrick.grocy.util.Constants;
 import xyz.zedler.patrick.grocy.util.Constants.SETTINGS.APPEARANCE;
 import xyz.zedler.patrick.grocy.util.Constants.SETTINGS.NETWORK;
 import xyz.zedler.patrick.grocy.util.Constants.SETTINGS_DEFAULT;
+import xyz.zedler.patrick.grocy.util.Constants.THEME;
 import xyz.zedler.patrick.grocy.util.LocaleUtil;
 import xyz.zedler.patrick.grocy.util.NetUtil;
 import xyz.zedler.patrick.grocy.util.PrefsUtil;
@@ -160,6 +162,28 @@ public class MainActivity extends AppCompatActivity {
         );
         sharedPrefs.edit().putString(Constants.PREF.SERVER_URL, serverUrl).apply();
       }
+    }
+
+    switch (sharedPrefs.getString(APPEARANCE.DESIGN, SETTINGS_DEFAULT.APPEARANCE.DESIGN)) {
+      case THEME.RED:
+        setTheme(R.style.Theme_Grocy_Red);
+        break;
+      case THEME.YELLOW:
+        setTheme(R.style.Theme_Grocy_Yellow);
+        break;
+      case THEME.GREEN:
+        setTheme(R.style.Theme_Grocy_Green);
+        break;
+      case THEME.BLUE:
+        setTheme(R.style.Theme_Grocy_Blue);
+        break;
+      default:
+        if (DynamicColors.isDynamicColorAvailable()) {
+          DynamicColors.applyIfAvailable(this);
+        } else {
+          setTheme(R.style.Theme_Grocy_Red);
+        }
+        break;
     }
 
     super.onCreate(savedInstanceState);

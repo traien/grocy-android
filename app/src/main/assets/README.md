@@ -3,12 +3,13 @@
 ## Android 12 and Material You
 
 1. Implement edge to edge behavior (including for BottomAppBar)
-2. Replace LinearLayouts in app bars with full-width MaterialToolbar
+2. Replace LinearLayouts in app bars with full-width MaterialToolbar (except the ones with 32dp logo)
 3. Replace MaterialComponents themes with Material3 and implement attribute themes
-4. Replace all color references with attributes
+4. Replace all color references with attributes and color icons with #000000 for proper tinting
 5. Replace all text appearances with Material3 text styles
 6. Implement different color themes
-7. Optimize splashscreen for Android 12
+7. Optimize splashscreen for Android 12 (maybe without animated logo)
+8. Replace regular progress bar with animated material component
 
 ## Alpha testing text
 

@@ -92,6 +92,7 @@ public final class Constants {
     public final static class APPEARANCE {
 
       public final static String THEME = "theme";
+      public final static String DESIGN = "design";
       public final static String LANGUAGE = "language";
     }
 
@@ -154,6 +155,7 @@ public final class Constants {
     public final static class APPEARANCE {
 
       public final static int THEME = SettingsViewModel.THEME_SYSTEM;
+      public final static String DESIGN = "";
       public final static String LANGUAGE = null;
     }
 
@@ -340,5 +342,21 @@ public final class Constants {
       public final static String INVENTORY = "inventory";
       public final static String SAVE = "save";
     }
+  }
+
+  public final static class THEME {
+
+    public final static class MODE {
+
+      public final static int AUTO = 0;
+      public final static int LIGHT = 1;
+      public final static int DARK = 2;
+    }
+
+    public final static String DYNAMIC = "dynamic";
+    public final static String RED = "red";
+    public final static String YELLOW = "yellow";
+    public final static String GREEN = "green";
+    public final static String BLUE = "blue";
   }
 }
