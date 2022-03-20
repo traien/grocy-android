@@ -126,7 +126,7 @@
 
       </HorizontalScrollView>
 
-      <xyz.zedler.patrick.grocy.view.ExpandableCard
+      <de.osamaco.grocy.view.ExpandableCard
         android:id="@+id/card_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
-        <xyz.zedler.patrick.grocy.view.ListItem
+        <de.osamaco.grocy.view.ListItem
           android:id="@+id/item_amount"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
@@ -154,14 +154,14 @@
           android:layout_marginEnd="16dp"
           android:orientation="horizontal">
 
-          <xyz.zedler.patrick.grocy.view.ActionButton
+          <de.osamaco.grocy.view.ActionButton
             android:id="@+id/button_consume"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:icon="@drawable/ic_round_consume_product"
             app:tint="@color/icon" />
 
-          <xyz.zedler.patrick.grocy.view.ActionButton
+          <de.osamaco.grocy.view.ActionButton
             android:id="@+id/button_open"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -172,41 +172,41 @@
 
       </LinearLayout>
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_due_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_last_purchased"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_last_used"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_last_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_shelf_life"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_spoil_rate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -227,7 +227,7 @@
           android:layout_gravity="center_vertical"
           android:layout_margin="16dp" />
 
-        <xyz.zedler.patrick.grocy.view.BezierCurveChart
+        <de.osamaco.grocy.view.BezierCurveChart
           android:id="@+id/item_price_history"
           android:layout_width="match_parent"
           android:layout_height="240dp"

@@ -38,7 +38,7 @@
 
   </FrameLayout>
 
-  <xyz.zedler.patrick.grocy.bottomappbar.CustomBottomAppBar
+  <de.osamaco.grocy.bottomappbar.CustomBottomAppBar
     android:id="@+id/bottom_app_bar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

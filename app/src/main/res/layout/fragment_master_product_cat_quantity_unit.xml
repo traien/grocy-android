@@ -23,19 +23,19 @@
   xmlns:app="http://schemas.android.com/apk/res-auto">
   <data>
     <import type="android.view.View" />
-    <import type="xyz.zedler.patrick.grocy.R" />
+    <import type="de.osamaco.grocy.R" />
     <variable
       name="formData"
-      type="xyz.zedler.patrick.grocy.model.FormDataMasterProductCatQuantityUnit" />
+      type="de.osamaco.grocy.model.FormDataMasterProductCatQuantityUnit" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.MasterProductCatQuantityUnitViewModel" />
+      type="de.osamaco.grocy.viewmodel.MasterProductCatQuantityUnitViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.MasterProductCatQuantityUnitFragment" />
+      type="de.osamaco.grocy.fragment.MasterProductCatQuantityUnitFragment" />
   </data>
 
   <androidx.coordinatorlayout.widget.CoordinatorLayout

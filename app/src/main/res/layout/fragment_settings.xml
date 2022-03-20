@@ -24,16 +24,16 @@
 
   <data>
     <!--suppress AndroidDomInspection -->
-    <import type="xyz.zedler.patrick.grocy.fragment.SettingsFragmentDirections" />
+    <import type="de.osamaco.grocy.fragment.SettingsFragmentDirections" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.SettingsFragment" />
+      type="de.osamaco.grocy.fragment.SettingsFragment" />
     <variable
       name="clickUtil"
-      type="xyz.zedler.patrick.grocy.util.ClickUtil" />
+      type="de.osamaco.grocy.util.ClickUtil" />
   </data>
 
   <androidx.coordinatorlayout.widget.CoordinatorLayout

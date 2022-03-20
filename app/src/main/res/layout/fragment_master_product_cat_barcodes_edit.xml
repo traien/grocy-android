@@ -24,20 +24,20 @@
 
   <data>
     <import type="android.view.View" />
-    <import type="xyz.zedler.patrick.grocy.R" />
-    <import type="xyz.zedler.patrick.grocy.util.Constants" />
+    <import type="de.osamaco.grocy.R" />
+    <import type="de.osamaco.grocy.util.Constants" />
     <variable
       name="formData"
-      type="xyz.zedler.patrick.grocy.model.FormDataMasterProductCatBarcodesEdit" />
+      type="de.osamaco.grocy.model.FormDataMasterProductCatBarcodesEdit" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.MasterProductCatBarcodesEditViewModel" />
+      type="de.osamaco.grocy.viewmodel.MasterProductCatBarcodesEditViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.MasterProductCatBarcodesEditFragment" />
+      type="de.osamaco.grocy.fragment.MasterProductCatBarcodesEditFragment" />
   </data>
 
   <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -186,7 +186,7 @@
                 app:endIconOnClickListener="@{v -> fragment.toggleScannerVisibility()}"
                 app:errorText="@{formData.barcodeErrorLive}">
 
-                <xyz.zedler.patrick.grocy.view.CustomAutoCompleteTextView
+                <de.osamaco.grocy.view.CustomAutoCompleteTextView
                   android:id="@+id/auto_complete_barcode"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
@@ -279,7 +279,7 @@
 
               </LinearLayout>
 
-              <xyz.zedler.patrick.grocy.view.ActionButton
+              <de.osamaco.grocy.view.ActionButton
                 android:id="@+id/amount_more"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -289,7 +289,7 @@
                 app:tint="@color/icon"
                 app:dense="true" />
 
-              <xyz.zedler.patrick.grocy.view.ActionButton
+              <de.osamaco.grocy.view.ActionButton
                 android:id="@+id/amount_less"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

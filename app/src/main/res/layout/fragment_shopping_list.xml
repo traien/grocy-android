@@ -23,13 +23,13 @@
     <import type="android.view.View" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.ShoppingListViewModel" />
+      type="de.osamaco.grocy.viewmodel.ShoppingListViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.ShoppingListFragment" />
+      type="de.osamaco.grocy.fragment.ShoppingListFragment" />
   </data>
 
   <RelativeLayout
@@ -109,7 +109,7 @@
                 android:ellipsize="end"
                 android:text="@string/title_shopping_list" />
 
-              <xyz.zedler.patrick.grocy.view.ActionButton
+              <de.osamaco.grocy.view.ActionButton
                 android:id="@+id/button_shopping_list_lists"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
           android:layout_marginTop="6dp"
           android:layout_marginBottom="8dp">
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:data="@{viewModel.filterChipLiveDataStatus}"/>
@@ -213,12 +213,12 @@
             android:layout_gravity="center_vertical"
             android:background="@color/filter_chip_stroke_inactive"/>
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:data="@{viewModel.filterChipLiveDataGrouping}"/>
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               app:data="@{viewModel.filterChipLiveDataExtraField}"/>

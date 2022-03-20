@@ -23,23 +23,23 @@
 
   <data>
     <import type="android.view.View" />
-    <import type="xyz.zedler.patrick.grocy.R" />
-    <import type="xyz.zedler.patrick.grocy.util.Constants" />
+    <import type="de.osamaco.grocy.R" />
+    <import type="de.osamaco.grocy.util.Constants" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.SettingsViewModel" />
+      type="de.osamaco.grocy.viewmodel.SettingsViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.SettingsCatShoppingModeFragment" />
+      type="de.osamaco.grocy.fragment.SettingsCatShoppingModeFragment" />
     <variable
       name="sharedPrefs"
       type="android.content.SharedPreferences" />
     <variable
       name="clickUtil"
-      type="xyz.zedler.patrick.grocy.util.ClickUtil" />
+      type="de.osamaco.grocy.util.ClickUtil" />
   </data>
 
   <androidx.coordinatorlayout.widget.CoordinatorLayout

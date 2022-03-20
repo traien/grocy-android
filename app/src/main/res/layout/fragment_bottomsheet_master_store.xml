@@ -64,12 +64,12 @@
       android:layout_marginTop="8dp"
       android:paddingBottom="8dp">
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_master_store_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_master_store_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

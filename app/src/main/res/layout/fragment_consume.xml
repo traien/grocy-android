@@ -24,20 +24,20 @@
 
   <data>
     <import type="android.view.View" />
-    <import type="xyz.zedler.patrick.grocy.R" />
-    <import type="xyz.zedler.patrick.grocy.util.Constants" />
+    <import type="de.osamaco.grocy.R" />
+    <import type="de.osamaco.grocy.util.Constants" />
     <variable
       name="formData"
-      type="xyz.zedler.patrick.grocy.model.FormDataConsume" />
+      type="de.osamaco.grocy.model.FormDataConsume" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.ConsumeViewModel" />
+      type="de.osamaco.grocy.viewmodel.ConsumeViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.ConsumeFragment" />
+      type="de.osamaco.grocy.fragment.ConsumeFragment" />
   </data>
 
   <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -238,7 +238,7 @@
                 app:endIconOnClickListener="@{v -> fragment.toggleScannerVisibility()}"
                 app:errorText="@{formData.productNameErrorLive}">
 
-                <xyz.zedler.patrick.grocy.view.CustomAutoCompleteTextView
+                <de.osamaco.grocy.view.CustomAutoCompleteTextView
                   android:id="@+id/auto_complete_consume_product"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
@@ -266,7 +266,7 @@
               android:paddingStart="68dp"
               android:paddingEnd="16dp">
 
-              <xyz.zedler.patrick.grocy.view.InputChip
+              <de.osamaco.grocy.view.InputChip
                 android:id="@+id/barcode_chip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -401,7 +401,7 @@
 
               </LinearLayout>
 
-              <xyz.zedler.patrick.grocy.view.ActionButton
+              <de.osamaco.grocy.view.ActionButton
                 android:id="@+id/amount_more"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -411,7 +411,7 @@
                 app:tint="@color/icon"
                 app:dense="true" />
 
-              <xyz.zedler.patrick.grocy.view.ActionButton
+              <de.osamaco.grocy.view.ActionButton
                 android:id="@+id/amount_less"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -24,13 +24,13 @@
     <import type="android.view.View" />
     <variable
       name="formData"
-      type="xyz.zedler.patrick.grocy.model.FormDataShoppingListEdit" />
+      type="de.osamaco.grocy.model.FormDataShoppingListEdit" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.ShoppingListEditViewModel" />
+      type="de.osamaco.grocy.viewmodel.ShoppingListEditViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
   </data>
 
   <androidx.coordinatorlayout.widget.CoordinatorLayout

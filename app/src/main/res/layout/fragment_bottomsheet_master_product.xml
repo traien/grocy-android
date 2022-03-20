@@ -64,43 +64,43 @@
       android:layout_marginTop="8dp"
       android:paddingBottom="8dp">
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_master_product_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-      <xyz.zedler.patrick.grocy.view.ExpandableCard
+      <de.osamaco.grocy.view.ExpandableCard
         android:id="@+id/card_master_product_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_master_product_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_master_product_min_stock_amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_master_product_qu_purchase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_master_product_qu_stock"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_master_product_qu_factor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-      <xyz.zedler.patrick.grocy.view.ListItem
+      <de.osamaco.grocy.view.ListItem
         android:id="@+id/item_master_product_product_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

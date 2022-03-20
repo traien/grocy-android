@@ -24,16 +24,16 @@
 
   <data>
     <import type="android.view.View" />
-    <import type="xyz.zedler.patrick.grocy.R" />
+    <import type="de.osamaco.grocy.R" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.MasterProductCatConversionsViewModel" />
+      type="de.osamaco.grocy.viewmodel.MasterProductCatConversionsViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.MasterProductCatConversionsFragment" />
+      type="de.osamaco.grocy.fragment.MasterProductCatConversionsFragment" />
   </data>
 
   <androidx.coordinatorlayout.widget.CoordinatorLayout

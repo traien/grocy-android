@@ -64,7 +64,7 @@
         android:layout_gravity="center_vertical"
         android:orientation="vertical">
 
-        <xyz.zedler.patrick.grocy.view.ActionButton
+        <de.osamaco.grocy.view.ActionButton
           android:id="@+id/button_list_selection_new"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"

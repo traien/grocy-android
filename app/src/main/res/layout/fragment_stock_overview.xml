@@ -21,16 +21,16 @@
 
   <data>
     <import type="android.view.View" />
-    <import type="xyz.zedler.patrick.grocy.util.Constants" />
+    <import type="de.osamaco.grocy.util.Constants" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.StockOverviewViewModel" />
+      type="de.osamaco.grocy.viewmodel.StockOverviewViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.StockOverviewFragment" />
+      type="de.osamaco.grocy.fragment.StockOverviewFragment" />
   </data>
 
   <RelativeLayout
@@ -214,17 +214,17 @@
           android:layout_marginTop="6dp"
           android:layout_marginBottom="8dp">
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:data="@{viewModel.filterChipLiveDataStatus}"/>
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:data="@{viewModel.filterChipLiveDataProductGroup}"/>
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="@{viewModel.isFeatureEnabled(Constants.PREF.FEATURE_STOCK_LOCATION_TRACKING) ? View.VISIBLE : View.GONE}"
@@ -238,17 +238,17 @@
             android:layout_gravity="center_vertical"
             android:background="@color/filter_chip_stroke_inactive"/>
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:data="@{viewModel.filterChipLiveDataSort}"/>
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:data="@{viewModel.filterChipLiveDataGrouping}"/>
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:data="@{viewModel.filterChipLiveDataExtraField}"/>

@@ -23,10 +23,10 @@
     <import type="android.view.View" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="sheet"
-      type="xyz.zedler.patrick.grocy.fragment.bottomSheetDialog.BarcodeFormatsBottomSheet" />
+      type="de.osamaco.grocy.fragment.bottomSheetDialog.BarcodeFormatsBottomSheet" />
   </data>
 
   <LinearLayout

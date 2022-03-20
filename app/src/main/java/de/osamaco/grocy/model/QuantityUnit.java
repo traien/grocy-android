@@ -1,0 +1,171 @@
+/*
+ * This file is part of Grocy Android.
+ *
+ * Grocy Android is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Grocy Android is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Grocy Android. If not, see http://www.gnu.org/licenses/.
+ *
+ * Copyright (c) 2020-2022 by Patrick Zedler and Dominic Zedler
+ */
+
+package de.osamaco.grocy.model;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
+import com.google.gson.annotations.SerializedName;
+import java.util.Objects;
+
+@Entity(tableName = "quantity_unit_table")
+public class QuantityUnit implements Parcelable {
+
+  @PrimaryKey
+  @ColumnInfo(name = "id")
+  @SerializedName("id")
+  private int id;
+
+  @ColumnInfo(name = "name")
+  @SerializedName("name")
+  private String name;
+
+  @ColumnInfo(name = "description")
+  @SerializedName("description")
+  private String description;
+
+  @ColumnInfo(name = "name_plural")
+  @SerializedName("name_plural")
+  private String namePlural;
+
+  @ColumnInfo(name = "plural_forms")
+  @SerializedName("plural_forms")
+  private String pluralForms;
+
+  public QuantityUnit() {
+  }
+
+  @Ignore
+  public QuantityUnit(int id, String name) {
+    this.id = id;
+    this.name = name;
+  }
+
+  @Ignore
+  public QuantityUnit(Parcel parcel) {
+    id = parcel.readInt();
+    name = parcel.readString();
+    description = parcel.readString();
+    namePlural = parcel.readString();
+    pluralForms = parcel.readString();
+  }
+
+  @Override
+  public void writeToParcel(Parcel dest, int flags) {
+    dest.writeInt(id);
+    dest.writeString(name);
+    dest.writeString(description);
+    dest.writeString(namePlural);
+    dest.writeString(pluralForms);
+  }
+
+  public static final Creator<QuantityUnit> CREATOR = new Creator<QuantityUnit>() {
+
+    @Override
+    public QuantityUnit createFromParcel(Parcel in) {
+      return new QuantityUnit(in);
+    }
+
+    @Override
+    public QuantityUnit[] newArray(int size) {
+      return new QuantityUnit[size];
+    }
+  };
+
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public String getNamePlural() {
+    return namePlural == null || namePlural.isEmpty() ? name : namePlural;
+  }
+
+  public String getNamePluralCanNull() {
+    return namePlural;
+  }
+
+  public void setNamePlural(String namePlural) {
+    this.namePlural = namePlural;
+  }
+
+  public String getPluralForms() {
+    return pluralForms;
+  }
+
+  public void setPluralForms(String pluralForms) {
+    this.pluralForms = pluralForms;
+  }
+
+  @Override
+  public int describeContents() {
+    return 0;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    QuantityUnit that = (QuantityUnit) o;
+    return id == that.id &&
+        Objects.equals(name, that.name) &&
+        Objects.equals(description, that.description) &&
+        Objects.equals(namePlural, that.namePlural) &&
+        Objects.equals(pluralForms, that.pluralForms);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(id, name, description, namePlural, pluralForms);
+  }
+
+  @NonNull
+  @Override
+  public String toString() {
+    return "QuantityUnit(" + name + ')';
+  }
+}

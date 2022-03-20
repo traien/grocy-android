@@ -23,20 +23,20 @@
   xmlns:app="http://schemas.android.com/apk/res-auto">
   <data>
     <import type="android.view.View" />
-    <import type="xyz.zedler.patrick.grocy.R" />
-    <import type="xyz.zedler.patrick.grocy.util.Constants" />
+    <import type="de.osamaco.grocy.R" />
+    <import type="de.osamaco.grocy.util.Constants" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.OverviewStartViewModel" />
+      type="de.osamaco.grocy.viewmodel.OverviewStartViewModel" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.OverviewStartFragment" />
+      type="de.osamaco.grocy.fragment.OverviewStartFragment" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="clickUtil"
-      type="xyz.zedler.patrick.grocy.util.ClickUtil" />
+      type="de.osamaco.grocy.util.ClickUtil" />
   </data>
 
   <RelativeLayout

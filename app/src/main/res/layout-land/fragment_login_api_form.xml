@@ -25,13 +25,13 @@
   <data>
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.LoginApiFormFragment" />
+      type="de.osamaco.grocy.fragment.LoginApiFormFragment" />
     <variable
       name="clickUtil"
-      type="xyz.zedler.patrick.grocy.util.ClickUtil" />
+      type="de.osamaco.grocy.util.ClickUtil" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
   </data>
 
   <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -125,35 +125,35 @@
               android:layout_height="wrap_content"
               android:orientation="horizontal">
 
-              <xyz.zedler.patrick.grocy.view.ActionButton
+              <de.osamaco.grocy.view.ActionButton
                 android:id="@+id/button_login_feedback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:icon="@drawable/ic_round_feedback_anim"
                 app:tint="@color/icon" />
 
-              <xyz.zedler.patrick.grocy.view.ActionButton
+              <de.osamaco.grocy.view.ActionButton
                 android:id="@+id/button_login_help"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:icon="@drawable/ic_round_help_outline_anim"
                 app:tint="@color/icon" />
 
-              <xyz.zedler.patrick.grocy.view.ActionButton
+              <de.osamaco.grocy.view.ActionButton
                 android:id="@+id/button_login_about"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:icon="@drawable/ic_round_info_outline_anim"
                 app:tint="@color/icon" />
 
-              <xyz.zedler.patrick.grocy.view.ActionButton
+              <de.osamaco.grocy.view.ActionButton
                 android:id="@+id/button_login_website"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:icon="@drawable/ic_round_open_in_browser_anim"
                 app:tint="@color/icon" />
 
-              <xyz.zedler.patrick.grocy.view.ActionButton
+              <de.osamaco.grocy.view.ActionButton
                 android:id="@+id/button_login_settings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

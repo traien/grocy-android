@@ -23,13 +23,13 @@
     <import type="android.view.View" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.TasksViewModel" />
+      type="de.osamaco.grocy.viewmodel.TasksViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.TasksFragment" />
+      type="de.osamaco.grocy.fragment.TasksFragment" />
   </data>
 
   <RelativeLayout
@@ -181,7 +181,7 @@
           android:layout_marginTop="6dp"
           android:layout_marginBottom="8dp">
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:data="@{viewModel.filterChipLiveDataStatus}"/>
@@ -194,7 +194,7 @@
             android:layout_gravity="center_vertical"
             android:background="@color/filter_chip_stroke_inactive"/>
 
-          <xyz.zedler.patrick.grocy.view.FilterChip
+          <de.osamaco.grocy.view.FilterChip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:data="@{viewModel.filterChipLiveDataSort}"/>

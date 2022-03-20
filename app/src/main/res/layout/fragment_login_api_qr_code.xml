@@ -25,13 +25,13 @@
   <data>
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.LoginApiQrCodeFragment" />
+      type="de.osamaco.grocy.fragment.LoginApiQrCodeFragment" />
     <variable
       name="clickUtil"
-      type="xyz.zedler.patrick.grocy.util.ClickUtil" />
+      type="de.osamaco.grocy.util.ClickUtil" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
   </data>
 
   <RelativeLayout
@@ -103,7 +103,7 @@
           android:orientation="horizontal"
           android:layout_marginTop="4dp">
 
-          <xyz.zedler.patrick.grocy.view.ActionButton
+          <de.osamaco.grocy.view.ActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="@{() -> fragment.showFeedbackBottomSheet()}"
@@ -112,7 +112,7 @@
             app:icon="@drawable/ic_round_feedback_anim"
             app:tint="@color/icon" />
 
-          <xyz.zedler.patrick.grocy.view.ActionButton
+          <de.osamaco.grocy.view.ActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="@{() -> fragment.openHelpWebsite()}"
@@ -121,7 +121,7 @@
             app:icon="@drawable/ic_round_help_outline_anim"
             app:tint="@color/icon" />
 
-          <xyz.zedler.patrick.grocy.view.ActionButton
+          <de.osamaco.grocy.view.ActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="@{() -> fragment.navigateDeepLink(@string/deep_link_aboutFragment)}"
@@ -130,7 +130,7 @@
             app:icon="@drawable/ic_round_info_outline_anim"
             app:tint="@color/icon" />
 
-          <xyz.zedler.patrick.grocy.view.ActionButton
+          <de.osamaco.grocy.view.ActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="@{() -> fragment.openGrocyWebsite()}"
@@ -139,7 +139,7 @@
             app:icon="@drawable/ic_round_open_in_browser_anim"
             app:tint="@color/icon" />
 
-          <xyz.zedler.patrick.grocy.view.ActionButton
+          <de.osamaco.grocy.view.ActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="@{() -> fragment.navigateDeepLink(@string/deep_link_settingsFragment)}"

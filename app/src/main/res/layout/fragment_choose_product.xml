@@ -24,19 +24,19 @@
 
   <data>
     <import type="android.view.View" />
-    <import type="xyz.zedler.patrick.grocy.R" />
+    <import type="de.osamaco.grocy.R" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.ChooseProductViewModel" />
+      type="de.osamaco.grocy.viewmodel.ChooseProductViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.ChooseProductFragment" />
+      type="de.osamaco.grocy.fragment.ChooseProductFragment" />
     <variable
       name="clickUtil"
-      type="xyz.zedler.patrick.grocy.util.ClickUtil" />
+      type="de.osamaco.grocy.util.ClickUtil" />
   </data>
 
   <androidx.coordinatorlayout.widget.CoordinatorLayout

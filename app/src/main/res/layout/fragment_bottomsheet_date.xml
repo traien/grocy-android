@@ -215,7 +215,7 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
 
-        <xyz.zedler.patrick.grocy.view.ActionButton
+        <de.osamaco.grocy.view.ActionButton
           android:id="@+id/more_month"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
@@ -234,7 +234,7 @@
           android:layout_gravity="center_vertical"
           android:textColor="@color/icon"/>
 
-        <xyz.zedler.patrick.grocy.view.ActionButton
+        <de.osamaco.grocy.view.ActionButton
           android:id="@+id/less_month"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
@@ -249,7 +249,7 @@
 
       </LinearLayout>
 
-      <xyz.zedler.patrick.grocy.view.ActionButton
+      <de.osamaco.grocy.view.ActionButton
         android:id="@+id/more_day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -268,7 +268,7 @@
         android:layout_gravity="center_vertical"
         android:textColor="@color/icon"/>
 
-      <xyz.zedler.patrick.grocy.view.ActionButton
+      <de.osamaco.grocy.view.ActionButton
         android:id="@+id/less_day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -289,7 +289,7 @@
         android:layout_gravity="center"
         android:visibility="gone">
 
-        <xyz.zedler.patrick.grocy.view.ActionButton
+        <de.osamaco.grocy.view.ActionButton
           android:id="@+id/more_month_reverse"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
@@ -308,7 +308,7 @@
           android:layout_gravity="center_vertical"
           android:textColor="@color/icon"/>
 
-        <xyz.zedler.patrick.grocy.view.ActionButton
+        <de.osamaco.grocy.view.ActionButton
           android:id="@+id/less_month_reverse"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"

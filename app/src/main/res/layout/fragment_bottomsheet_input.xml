@@ -24,7 +24,7 @@
   <data>
     <variable
       name="bottomsheet"
-      type="xyz.zedler.patrick.grocy.fragment.bottomSheetDialog.InputBottomSheet" />
+      type="de.osamaco.grocy.fragment.bottomSheetDialog.InputBottomSheet" />
   </data>
 
   <LinearLayout
@@ -81,7 +81,7 @@
 
           </com.google.android.material.textfield.TextInputLayout>
 
-          <xyz.zedler.patrick.grocy.view.ActionButton
+          <de.osamaco.grocy.view.ActionButton
             android:id="@+id/more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
             app:tint="@color/icon"
             android:onClick="@{() -> bottomsheet.more()}" />
 
-          <xyz.zedler.patrick.grocy.view.ActionButton
+          <de.osamaco.grocy.view.ActionButton
             android:id="@+id/less"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

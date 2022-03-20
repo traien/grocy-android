@@ -22,13 +22,13 @@
     <import type="android.view.View" />
     <variable
       name="viewModel"
-      type="xyz.zedler.patrick.grocy.viewmodel.ShoppingModeViewModel" />
+      type="de.osamaco.grocy.viewmodel.ShoppingModeViewModel" />
     <variable
       name="activity"
-      type="xyz.zedler.patrick.grocy.activity.MainActivity" />
+      type="de.osamaco.grocy.activity.MainActivity" />
     <variable
       name="fragment"
-      type="xyz.zedler.patrick.grocy.fragment.ShoppingModeFragment" />
+      type="de.osamaco.grocy.fragment.ShoppingModeFragment" />
   </data>
 
   <RelativeLayout
@@ -103,7 +103,7 @@
               android:ellipsize="end"
               android:text="@string/title_shopping_list" />
 
-            <xyz.zedler.patrick.grocy.view.ActionButton
+            <de.osamaco.grocy.view.ActionButton
               android:id="@+id/button_shopping_list_lists"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
